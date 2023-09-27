@@ -49,11 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Forms Models\CountDownTimer.cs" />
+    <Compile Include="Gamification\DifficultyLevel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Gamification\DifficultyLevel.Designer.cs">
+      <DependentUpon>DifficultyLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gamification\Leaderboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gamification\Leaderboard.Designer.cs">
+      <DependentUpon>Leaderboard.cs</DependentUpon>
     </Compile>
     <Compile Include="Games\ReplacingBooks.cs">
       <SubType>Form</SubType>
@@ -61,13 +68,34 @@
     <Compile Include="Games\ReplacingBooks.Designer.cs">
       <DependentUpon>ReplacingBooks.cs</DependentUpon>
     </Compile>
+    <Compile Include="Gamification\Scores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gamification\Scores.Designer.cs">
+      <DependentUpon>Scores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Games\ReplacingBooks.resx">
       <DependentUpon>ReplacingBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gamification\DifficultyLevel.resx">
+      <DependentUpon>DifficultyLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gamification\Leaderboard.resx">
+      <DependentUpon>Leaderboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gamification\Scores.resx">
+      <DependentUpon>Scores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -77,6 +105,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -92,8 +121,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Gamification\" />
-    <Folder Include="Resources\" />
+    <None Include="Resources\Butterfly lifespan1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Up arrow.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

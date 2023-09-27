@@ -4,7 +4,6 @@ C:\Users\dkebo\Documents\Visual Studio 2022\Dewey_Decimal_System\bin\Debug\Dewey
 C:\Users\dkebo\Documents\Visual Studio 2022\Dewey_Decimal_System\bin\Debug\Dewey_Decimal_System_Library.dll
 C:\Users\dkebo\Documents\Visual Studio 2022\Dewey_Decimal_System\bin\Debug\Dewey_Decimal_System_Library.pdb
 C:\Users\dkebo\Documents\Visual Studio 2022\Dewey_Decimal_System\obj\Debug\Dewey_Decimal_System.csproj.AssemblyReference.cache
-C:\Users\dkebo\Documents\Visual Studio 2022\Dewey_Decimal_System\obj\Debug\Dewey_Decimal_System.Form1.resources
 C:\Users\dkebo\Documents\Visual Studio 2022\Dewey_Decimal_System\obj\Debug\Dewey_Decimal_System.Games.ReplacingBooks.resources
 C:\Users\dkebo\Documents\Visual Studio 2022\Dewey_Decimal_System\obj\Debug\Dewey_Decimal_System.Properties.Resources.resources
 C:\Users\dkebo\Documents\Visual Studio 2022\Dewey_Decimal_System\obj\Debug\Dewey_Decimal_System.csproj.GenerateResource.cache
@@ -12,3 +11,7 @@ C:\Users\dkebo\Documents\Visual Studio 2022\Dewey_Decimal_System\obj\Debug\Dewey
 C:\Users\dkebo\Documents\Visual Studio 2022\Dewey_Decimal_System\obj\Debug\Dewey_Decimal_System.csproj.CopyComplete
 C:\Users\dkebo\Documents\Visual Studio 2022\Dewey_Decimal_System\obj\Debug\Dewey_Decimal_System.exe
 C:\Users\dkebo\Documents\Visual Studio 2022\Dewey_Decimal_System\obj\Debug\Dewey_Decimal_System.pdb
+C:\Users\dkebo\Documents\Visual Studio 2022\Dewey_Decimal_System\obj\Debug\Dewey_Decimal_System.Gamification.DifficultyLevel.resources
+C:\Users\dkebo\Documents\Visual Studio 2022\Dewey_Decimal_System\obj\Debug\Dewey_Decimal_System.Gamification.Leaderboard.resources
+C:\Users\dkebo\Documents\Visual Studio 2022\Dewey_Decimal_System\obj\Debug\Dewey_Decimal_System.Gamification.Scores.resources
+C:\Users\dkebo\Documents\Visual Studio 2022\Dewey_Decimal_System\obj\Debug\Dewey_Decimal_System.Home.resources

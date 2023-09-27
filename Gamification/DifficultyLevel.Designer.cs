@@ -1,6 +1,6 @@
-﻿namespace Dewey_Decimal_System
+﻿namespace Dewey_Decimal_System.Gamification
 {
-    partial class Form1
+    partial class DifficultyLevel
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // Form1
+            // DifficultyLevel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1076, 541);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.BackgroundImage = global::Dewey_Decimal_System.Properties.Resources.Butterfly_lifespan;
+            this.ClientSize = new System.Drawing.Size(892, 552);
+            this.Name = "DifficultyLevel";
+            this.Text = "DifficultyLevel";
             this.ResumeLayout(false);
 
         }
@@ -44,4 +45,3 @@
         #endregion
     }
 }
-
