@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dewey_Decimal_System_Library">
+      <HintPath>..\Dewey_Decimal_System_Library\bin\Debug\net7.0-windows\Dewey_Decimal_System_Library.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />

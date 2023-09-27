@@ -8,6 +8,8 @@ namespace Dewey_Decimal_System.Games
     {
 
 
+
+
         //Declaring lists
 
         List<String> sortedList;
@@ -21,6 +23,7 @@ namespace Dewey_Decimal_System.Games
 
 
         public bool gameBegin { get; set; } = false;
+
 
 
         #region Constructor
@@ -48,6 +51,7 @@ namespace Dewey_Decimal_System.Games
 
 
 
+        #region Loading Call Numbers
         public void LoadCallNos()
         {
 
@@ -55,11 +59,101 @@ namespace Dewey_Decimal_System.Games
             listBoxRand.Items.Clear();
 
 
-            //Shuffle 
+            //Shuffle the list and store
+            ReplacingBooksLogic r = new ReplacingBooksLogic();
+            sortedList = r.GenerateCallNos();
+            shuffledList = r.ShuffleList(sortedList);
+
+            //Populate the list
+            foreach (var callNo in shuffledList)
+            {
+                listBoxRand.Items.Add(callNo);
+            }
+
         }
+        #endregion
 
 
 
+        //#region Drag and Drop 
+        //private void lstboxRandom_MouseDown(object sender, MouseEventArgs e)
+        //{
+        //    try
+        //    {
+        //        lstboxSorted.DoDragDrop(lstboxRandom.SelectedItem.ToString(), DragDropEffects.Copy);
+        //    }
+        //    catch (System.NullReferenceException ex)
+        //    {
+        //        MessageBox.Show("Please select a call number from the list");
+        //        throw ex;
+        //    }
+
+        //    if (StartGame())
+        //    {
+        //        StartTimer();
+        //        gameBegin = false;
+        //    }
+
+        //    if (EndGame())
+        //    {
+        //        // get the data of the users from the list box
+        //        userList = lstboxSorted.Items.Cast<String>().ToList();
+
+        //        bool isCorrectAnswer = userList.SequenceEqual(sortedList);
+
+        //        if (isCorrectAnswer)
+        //        {
+        //            // save the score 
+        //            Universal.Points = ScoreSystem.CalculateScore(Convert.ToInt32(timer.TimeLeft.Seconds));
+
+        //            Universal.UpdateUserControl = true;
+
+        //            // show user details and score
+        //            ScoreAndDetails scoreAndDetails = new ScoreAndDetails("Congratulations! You Solved Correctly 👑 ");
+        //            this.Hide();
+        //            scoreAndDetails.Show();
+        //        }
+        //        else
+        //        {
+        //            // incorrect sorting
+        //            Universal.Points = 0;
+        //            Universal.BonusPoints = 0;
+
+        //            Universal.UpdateUserControl = true;
+
+        //            // show user details and score
+        //            ScoreAndDetails scoreAndDetails = new ScoreAndDetails("Unlucky! You Solved Incorrectly 😢 ");
+        //            this.Hide();
+        //            scoreAndDetails.Show();
+
+        //        }
+        //    }
+        //}
+
+        //private void lstboxSorted_DragEnter(object sender, DragEventArgs e)
+        //{
+        //    if (e.Data.GetDataPresent(DataFormats.Text))
+        //    {
+        //        e.Effect = DragDropEffects.Copy;
+        //    }
+        //    else
+        //    {
+        //        e.Effect = DragDropEffects.None;
+        //    }
+        //}
+
+        //private void lstboxSorted_DragDrop(object sender, DragEventArgs e)
+        //{
+        //    lstboxSorted.Items.Add(e.Data.GetData(DataFormats.Text));
+        //    lstboxRandom.Items.Remove(e.Data.GetData(DataFormats.Text));
+
+        //    // initialise game mode
+        //    Global.Game1 = true;
+        //    Global.Game2 = false;
+        //    Global.Game3 = false;
+
+        //}
+        //#endregion
 
 
 
